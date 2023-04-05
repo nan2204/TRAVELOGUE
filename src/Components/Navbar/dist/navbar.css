@@ -1,0 +1,158 @@
+:root {
+  --primaryColor:rgba(219, 11, 80, 0.926);
+  --HoverColor:rgba(210, 70, 93, 0.875);
+  --whiteColor:White;
+  --blackColor:black;
+  --textColor:grey;
+  --whiteColorDream:White;
+  --greyBg:white;
+  --greyText:lightgrey;
+  --inputColor:white;
+  --boxShadow:lightgrey;
+}
+
+.navBarSection .header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  gap: 1rem;
+}
+.navBarSection .header .logoDiv .logo {
+  color: var(--whiteColor);
+  font-weight: 500;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.navBarSection .header .logoDiv .logo .icon {
+  color: var(--primaryColor);
+  font-size: 25px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 748px) {
+  .navBarSection .header .navBar {
+    background: var(--whiteColor);
+    position: absolute;
+    height: max-content;
+    padding: 1rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px maroon;
+    transition: 0.5s ease;
+    z-index: 1000;
+  }
+  .navBarSection .header .navBar .navLists {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+  .navBarSection .header .navBar .navLists .navItem {
+    padding: 1rem 0;
+    align-content: normal;
+  }
+  .navBarSection .header .navBar .navLists .navItem .navLink {
+    color: var(--textColor);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navBarSection .header .navBar .navLists .navItem .navLink:hover {
+    color: var(--primaryColor);
+  }
+  .navBarSection .header .navBar .navLists .headerBtns {
+    flex-direction: column;
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .btn {
+    margin-top: 1rem;
+    color: lightpink;
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .btn a {
+    font-weight: 600;
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .btn a:hover {
+    color: var(--whiteColor);
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .loginBtn {
+    background: none;
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .loginBtn a {
+    color: var(--primaryColor);
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .loginBtn:hover {
+    background: var(--HoverColor);
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .loginBtn:hover a {
+    color: var(--whiteColor);
+  }
+  .navBarSection .header .navBar .closeNavBar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--primaryColorr);
+  }
+  .navBarSection .header .navBar .closeNavBar:hover.icon {
+    color: var(--HoverColor);
+  }
+  .navBarSection .header .activeNavBar {
+    left: 0;
+  }
+}
+.navBarSection .header .toggleNavBar .icon {
+  font-size: 25px;
+  color: var(--whiteColor);
+}
+.navBarSection .header .toggleNavBar .icon:hover {
+  color: var(--primaryColor);
+}
+.navBarSection .activeHeader {
+  background: var(--greyText);
+  box-shadow: 0 2px 8px 2px grey;
+}
+
+@media screen and (min-width: 769px) {
+  .toggleNavBar.closeNavBar {
+    display: none;
+  }
+
+  .header {
+    padding: 1.5rem 2rem !important;
+  }
+  .header .navBar .navLists {
+    display: flex;
+    flex-direction: row;
+  }
+  .header .navBar .navLists .navItem .navLink {
+    color: var(--whiteColor);
+    padding: 0.45px;
+  }
+  .header .navBar .btn {
+    margin-left: 1rem;
+  }
+  .header .navBar .btn a {
+    color: var(--whiteColor);
+    font-weight: 500;
+  }
+  .header .navBar .loginBtn {
+    background: none;
+    border: 1px solid var(--primaryColor);
+  }
+  .header .navBar .loginBtn:hover {
+    background: var(--primaryColor);
+  }
+  .header .navBar .loginBtn:hover a {
+    color: var(--whiteColor);
+  }
+}
+@media screen and (min-width: 960px) {
+  .header .navBar .navLists .navItem {
+    padding: 0.7rem;
+  }
+}

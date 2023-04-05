@@ -1,0 +1,73 @@
+:root {
+  --primaryColor:rgba(219, 11, 80, 0.926);
+  --HoverColor:rgba(210, 70, 93, 0.875);
+  --whiteColor:White;
+  --blackColor:black;
+  --textColor:grey;
+  --whiteColorDream:White;
+  --greyBg:white;
+  --greyText:rgb(229, 221, 221);
+  --inputColor:white;
+  --boxShadow:lightgrey;
+}
+
+.footer {
+  background: var(--greyBg);
+  padding-left: 2rem 0;
+}
+.footer .secContainer {
+  gap: 1.5rem;
+  text-align: center;
+  background: var(--boxShadow);
+}
+.footer .secContainer .footerlogo {
+  padding-bottom: 0.5rem;
+}
+.footer .secContainer .footerlogo .logo {
+  color: var(--blackColor);
+  font-weight: 500;
+  cursor: pointer;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  justify-content: center;
+}
+.footer .secContainer .footerlogo .logo .icon {
+  font-size: 25px;
+  color: var(--primaryColor);
+  margin-right: 0.5rem;
+}
+.footer .secContainer .socials {
+  gap: 0.5rem;
+  margin: auto;
+  justify-content: center;
+}
+.footer .secContainer .socials .icon {
+  font-size: 30px;
+  background: var(--primaryColor);
+  border-radius: 50%;
+  padding: 5px;
+  color: var(--whiteColor);
+}
+.footer .secContainer .socials .icon:hover {
+  background: var(--blackColor);
+}
+.footer .secContainer .footerLinks {
+  display: grid;
+  row-gap: 0.2rem;
+}
+.footer .secContainer .footerLinks .linkTitle {
+  padding-bottom: 0.5rem;
+  color: var(--blackColor);
+  font-weight: 700;
+}
+.footer .secContainer .footerLinks li {
+  transform: translateX(10px);
+}
+.footer .secContainer .footerLinks li a {
+  color: var(--primaryColor);
+}
+.footer .secContainer a, .footer .secContainer .phone, .footer .secContainer .email {
+  color: var(--textColor);
+  font-size: 11px;
+  font-weight: 500;
+}
